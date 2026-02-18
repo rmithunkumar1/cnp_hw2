@@ -1,0 +1,110 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Comic Sans MS', 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Container */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+/* Story Header */
+.story-header {
+    background: linear-gradient(135deg, #74b9ff 0%, #a29bfe 100%);
+    padding: 40px 30px;
+    text-align: center;
+    color: white;
+}
+
+.story-title {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.story-author {
+    font-size: 1.2em;
+    font-style: italic;
+    opacity: 0.9;
+}
+
+/* Story Content */
+.story-content {
+    padding: 40px 30px;
+}
+
+.story-text {
+    line-height: 1.8;
+    font-size: 1.15em;
+    color: #2d3436;
+}
+
+.story-text p {
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.story-end {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #e17055;
+    margin-top: 30px;
+    font-style: italic;
+}
+
+/* Footer */
+.story-footer {
+    background-color: #dfe6e9;
+    padding: 20px;
+    text-align: center;
+    color: #636e72;
+    font-size: 0.9em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .story-title {
+        font-size: 2em;
+    }
+    
+    .story-content {
+        padding: 30px 20px;
+    }
+    
+    .story-text {
+        font-size: 1.05em;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+    
+    .story-title {
+        font-size: 1.5em;
+    }
+    
+    .story-header {
+        padding: 30px 20px;
+    }
+    
+    .story-content {
+        padding: 20px 15px;
+    }
+}
