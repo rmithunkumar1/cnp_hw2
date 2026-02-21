@@ -67,12 +67,45 @@ body {
     font-style: italic;
 }
 
+/* ID Styling */
+#main-title {
+    animation: colorChange 3s infinite;
+    letter-spacing: 2px;
+    padding: 25px 15px;
+    margin: 15px 0;
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+}
+
+/* Story Image */
+.story-image {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    display: block;
+    margin: 30px auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    border: 5px solid #a29bfe;
+    transition: transform 0.3s ease;
+}
+
+.story-image:hover {
+    transform: scale(1.05);
+}
+
+@keyframes colorChange {
+    0% { color: rgb(209, 17, 17); }
+    50% { color: #340eef; }
+    100% { color: rgb(13, 221, 34); }
+}
+
 /* Footer */
-.story-footer {
-    background-color: #dfe6e9;
+.label {
+    background-color: #52bee5;
     padding: 20px;
     text-align: center;
-    color: #636e72;
+    color: #d0cedb;
     font-size: 0.9em;
 }
 
